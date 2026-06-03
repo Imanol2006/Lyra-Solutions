@@ -52,14 +52,13 @@ export default function Nav() {
         <Image
           src="/logo.png"
           alt="Lyra Solutions"
-          width={120}
-          height={120}
+          width={140}
+          height={50}
           priority
           style={{
             width: 'auto',
-            height: '44px',
+            height: '64px',
             objectFit: 'contain',
-            marginLeft: '-6px',
           }}
         />
       </a>

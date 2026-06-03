@@ -15,7 +15,7 @@ export default function Footer() {
         alt="Lyra Solutions"
         width={100}
         height={100}
-        style={{ width: 'auto', height: '36px', objectFit: 'contain', marginLeft: '-4px' }}
+        style={{ width: 'auto', height: '32px', objectFit: 'contain' }}
       />
 
       <p style={{ fontSize: '0.7rem', color: '#7A8499' }}>
