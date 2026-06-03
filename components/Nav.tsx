@@ -57,7 +57,7 @@ export default function Nav() {
           priority
           style={{
             width: 'auto',
-            height: '100px',
+            height: '180px',
             objectFit: 'contain',
           }}
         />
