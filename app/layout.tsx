@@ -17,6 +17,10 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
   title: 'Lyra Solutions | Web Design for El Paso & Ciudad Juárez',
   description:
     'We build websites for local businesses in El Paso and Ciudad Juárez. Fast, custom, and built to bring in more clients.',
