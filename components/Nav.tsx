@@ -32,7 +32,7 @@ export default function Nav() {
       style={{
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        padding: '22px clamp(22px,4vw,48px)',
+        padding: '10px clamp(22px,4vw,48px)',
         background: scrolled ? 'rgba(4,4,10,0.88)' : 'transparent',
         backdropFilter: scrolled ? 'blur(14px)' : 'none',
         borderBottom: scrolled ? '1px solid rgba(99,102,241,0.11)' : '1px solid transparent',
@@ -57,7 +57,7 @@ export default function Nav() {
           priority
           style={{
             width: 'auto',
-            height: '64px',
+            height: '100px',
             objectFit: 'contain',
           }}
         />

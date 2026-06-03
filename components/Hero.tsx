@@ -57,7 +57,7 @@ export default function Hero() {
         display: 'flex',
         alignItems: 'center',
         zIndex: 1,
-        padding: 'clamp(96px,12vh,130px) clamp(22px,4vw,48px) 80px',
+        padding: 'clamp(140px,16vh,180px) clamp(22px,4vw,48px) 80px',
         overflow: 'hidden',
       }}
     >
