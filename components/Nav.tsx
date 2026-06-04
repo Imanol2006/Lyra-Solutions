@@ -35,7 +35,7 @@ export default function Nav() {
         padding: '10px clamp(22px,4vw,48px)',
         background: scrolled ? 'rgba(4,4,10,0.88)' : 'transparent',
         backdropFilter: scrolled ? 'blur(14px)' : 'none',
-        borderBottom: scrolled ? '1px solid rgba(99,102,241,0.11)' : '1px solid transparent',
+        borderBottom: scrolled ? '1px solid rgba(99,101,239,0.11)' : '1px solid transparent',
         transition: 'background 0.3s, border-color 0.3s',
       }}
     >
@@ -100,16 +100,16 @@ export default function Nav() {
           textDecoration: 'none',
           letterSpacing: '0.06em',
           padding: '8px 20px',
-          border: '1px solid rgba(99,102,241,0.32)',
+          border: '1px solid rgba(99,101,239,0.32)',
           transition: 'background 0.2s, border-color 0.2s',
         }}
         onMouseEnter={e => {
-          e.currentTarget.style.background = 'rgba(99,102,241,0.12)'
-          e.currentTarget.style.borderColor = '#6366F1'
+          e.currentTarget.style.background = 'rgba(99,101,239,0.12)'
+          e.currentTarget.style.borderColor = '#6365EF'
         }}
         onMouseLeave={e => {
           e.currentTarget.style.background = 'transparent'
-          e.currentTarget.style.borderColor = 'rgba(99,102,241,0.32)'
+          e.currentTarget.style.borderColor = 'rgba(99,101,239,0.32)'
         }}
       >
         Get in Touch

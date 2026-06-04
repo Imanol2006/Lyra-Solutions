@@ -22,7 +22,7 @@ export default function About() {
       style={{
         position: 'relative', zIndex: 1,
         padding: '110px 0',
-        borderTop: '1px solid rgba(99,102,241,0.11)',
+        borderTop: '1px solid rgba(99,101,239,0.11)',
       }}
     >
       <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 clamp(22px,4vw,48px)' }}>
@@ -59,19 +59,19 @@ export default function About() {
             {team.map(({ name, role, bio, initials }, i) => (
               <FadeIn key={name} delay={0.1 + i * 0.15}>
                 <div style={{
-                  border: '1px solid rgba(99,102,241,0.11)',
+                  border: '1px solid rgba(99,101,239,0.11)',
                   padding: '28px 32px',
                   display: 'flex', gap: 24, alignItems: 'flex-start',
                 }}>
                   {/* Avatar placeholder */}
                   <div style={{
                     width: 52, height: 52, flexShrink: 0,
-                    background: 'rgba(99,102,241,0.12)',
-                    border: '1px solid rgba(99,102,241,0.32)',
+                    background: 'rgba(99,101,239,0.12)',
+                    border: '1px solid rgba(99,101,239,0.32)',
                     borderRadius: '50%',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     fontFamily: 'var(--font-syne), sans-serif',
-                    fontSize: '0.875rem', fontWeight: 700, color: '#6366F1',
+                    fontSize: '0.875rem', fontWeight: 700, color: '#6365EF',
                   }}>
                     {initials}
                   </div>
@@ -86,7 +86,7 @@ export default function About() {
                     <div style={{
                       fontSize: '0.6875rem', fontWeight: 500,
                       letterSpacing: '0.12em', textTransform: 'uppercase',
-                      color: '#6366F1', marginBottom: 12,
+                      color: '#6365EF', marginBottom: 12,
                     }}>
                       {role}
                     </div>

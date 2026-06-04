@@ -65,7 +65,7 @@ function PricingCard({ tier, delay }: { tier: typeof tiers[0]; delay: number }) 
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         style={{
-          border: `1px solid ${tier.featured ? 'rgba(99,102,241,0.45)' : hovered ? 'rgba(99,102,241,0.32)' : 'rgba(99,102,241,0.11)'}`,
+          border: `1px solid ${tier.featured ? 'rgba(99,101,239,0.45)' : hovered ? 'rgba(99,101,239,0.32)' : 'rgba(99,101,239,0.11)'}`,
           padding: '44px 40px',
           position: 'relative',
           background: tier.featured ? 'rgba(8,8,18,0.5)' : 'transparent',
@@ -79,7 +79,7 @@ function PricingCard({ tier, delay }: { tier: typeof tiers[0]; delay: number }) 
         {/* Glow */}
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'radial-gradient(ellipse at top left, rgba(99,102,241,0.055) 0%, transparent 55%)',
+          background: 'radial-gradient(ellipse at top left, rgba(99,101,239,0.055) 0%, transparent 55%)',
           opacity: tier.featured || hovered ? 1 : 0,
           transition: 'opacity 0.3s',
           pointerEvents: 'none',
@@ -89,8 +89,8 @@ function PricingCard({ tier, delay }: { tier: typeof tiers[0]; delay: number }) 
           <div style={{
             display: 'inline-block',
             fontSize: '0.6rem', fontWeight: 600, letterSpacing: '0.15em',
-            textTransform: 'uppercase', color: '#6366F1',
-            border: '1px solid rgba(99,102,241,0.45)',
+            textTransform: 'uppercase', color: '#6365EF',
+            border: '1px solid rgba(99,101,239,0.45)',
             padding: '4px 10px', marginBottom: 24,
           }}>
             {tier.badge}
@@ -123,7 +123,7 @@ function PricingCard({ tier, delay }: { tier: typeof tiers[0]; delay: number }) 
 
         <div style={{ fontSize: '0.75rem', color: '#7A8499', marginBottom: 36 }}>{tier.note}</div>
 
-        <div style={{ height: 1, background: 'rgba(99,102,241,0.11)', marginBottom: 28 }} />
+        <div style={{ height: 1, background: 'rgba(99,101,239,0.11)', marginBottom: 28 }} />
 
         <ul style={{
           listStyle: 'none', marginBottom: 40,
@@ -131,7 +131,7 @@ function PricingCard({ tier, delay }: { tier: typeof tiers[0]; delay: number }) 
         }}>
           {tier.features.map(f => (
             <li key={f} style={{ display: 'flex', alignItems: 'center', gap: 10, fontSize: '0.8125rem', color: '#7A8499' }}>
-              <span style={{ display: 'inline-block', width: 14, height: 1, background: '#6366F1', flexShrink: 0 }} />
+              <span style={{ display: 'inline-block', width: 14, height: 1, background: '#6365EF', flexShrink: 0 }} />
               {f}
             </li>
           ))}
@@ -146,20 +146,20 @@ function PricingCard({ tier, delay }: { tier: typeof tiers[0]; delay: number }) 
             fontSize: '0.8125rem', fontWeight: 500, letterSpacing: '0.04em',
             textDecoration: 'none',
             padding: '13px 26px',
-            border: '1px solid rgba(99,102,241,0.32)',
+            border: '1px solid rgba(99,101,239,0.32)',
             color: '#EEF0FF',
             position: 'relative', overflow: 'hidden',
-            background: tier.featured ? '#6366F1' : 'transparent',
-            borderColor: tier.featured ? '#6366F1' : 'rgba(99,102,241,0.32)',
+            background: tier.featured ? '#6365EF' : 'transparent',
+            borderColor: tier.featured ? '#6365EF' : 'rgba(99,101,239,0.32)',
             transition: 'transform 0.2s, border-color 0.2s',
             transform: 'translateX(0)',
           }}
           onMouseEnter={e => {
-            e.currentTarget.style.borderColor = '#6366F1'
+            e.currentTarget.style.borderColor = '#6365EF'
             e.currentTarget.style.transform = 'translateX(4px)'
           }}
           onMouseLeave={e => {
-            e.currentTarget.style.borderColor = tier.featured ? '#6366F1' : 'rgba(99,102,241,0.32)'
+            e.currentTarget.style.borderColor = tier.featured ? '#6365EF' : 'rgba(99,101,239,0.32)'
             e.currentTarget.style.transform = 'translateX(0)'
           }}
         >
@@ -180,7 +180,7 @@ export default function Pricing() {
       style={{
         position: 'relative', zIndex: 1,
         padding: '110px 0',
-        borderTop: '1px solid rgba(99,102,241,0.11)',
+        borderTop: '1px solid rgba(99,101,239,0.11)',
       }}
     >
       <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 clamp(22px,4vw,48px)' }}>
@@ -216,7 +216,7 @@ export default function Pricing() {
         {/* Managed / Transfer note */}
         <FadeIn delay={0.3}>
           <div style={{
-            marginTop: 18, border: '1px solid rgba(99,102,241,0.11)',
+            marginTop: 18, border: '1px solid rgba(99,101,239,0.11)',
             padding: 'clamp(20px,3vw,28px) clamp(22px,3vw,36px)',
             display: 'grid',
             gridTemplateColumns: '1fr 1px 1fr',

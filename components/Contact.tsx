@@ -11,7 +11,7 @@ export default function Contact() {
       style={{
         position: 'relative', zIndex: 1,
         padding: '110px 0 150px',
-        borderTop: '1px solid rgba(99,102,241,0.11)',
+        borderTop: '1px solid rgba(99,101,239,0.11)',
       }}
     >
       <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 clamp(22px,4vw,48px)' }}>
@@ -29,7 +29,7 @@ export default function Contact() {
                 lineHeight: 1.05, maxWidth: 520,
               }}>
                 Want to see what your<br />
-                <em style={{ fontStyle: 'normal', color: '#6366F1' }}>site could look like?</em>
+                <em style={{ fontStyle: 'normal', color: '#6365EF' }}>site could look like?</em>
               </h2>
 
               <div style={{
@@ -54,14 +54,14 @@ export default function Contact() {
                 onMouseLeave={() => setHovered(false)}
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: 12,
-                  background: '#6366F1', color: '#fff',
+                  background: '#6365EF', color: '#fff',
                   textDecoration: 'none',
                   fontFamily: 'var(--font-syne), sans-serif',
                   fontSize: '0.875rem', fontWeight: 500, letterSpacing: '0.06em',
                   padding: '16px 32px',
                   position: 'relative', overflow: 'hidden',
                   transform: hovered ? 'translateY(-2px)' : 'translateY(0)',
-                  boxShadow: hovered ? '0 14px 38px rgba(99,102,241,0.38)' : 'none',
+                  boxShadow: hovered ? '0 14px 38px rgba(99,101,239,0.38)' : 'none',
                   transition: 'transform 0.2s, box-shadow 0.2s',
                   whiteSpace: 'nowrap',
                 }}

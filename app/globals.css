@@ -3,13 +3,13 @@
 @theme inline {
   --color-bg: #04040A;
   --color-surface: #0D0D1A;
-  --color-indigo: #6366F1;
-  --color-indigo-dim: rgba(99,102,241,0.45);
-  --color-indigo-glow: rgba(99,102,241,0.12);
+  --color-indigo: #6365EF;
+  --color-indigo-dim: rgba(99,101,239,0.45);
+  --color-indigo-glow: rgba(99,101,239,0.12);
   --color-white: #EEF0FF;
   --color-muted: #7A8499;
-  --color-border: rgba(99,102,241,0.11);
-  --color-border-h: rgba(99,102,241,0.32);
+  --color-border: rgba(99,101,239,0.11);
+  --color-border-h: rgba(99,101,239,0.32);
   --font-display: 'Syne', sans-serif;
   --font-body: 'Space Grotesk', sans-serif;
 }
@@ -42,18 +42,18 @@ body {
 }
 #cur {
   width: 7px; height: 7px;
-  background: #6366F1;
+  background: #6365EF;
   transition: width 0.18s, height 0.18s;
   mix-blend-mode: screen;
 }
 #cur-r {
   width: 30px; height: 30px;
-  border: 1px solid rgba(99,102,241,0.45);
+  border: 1px solid rgba(99,101,239,0.45);
   z-index: 9998;
   transition: width 0.28s, height 0.28s, border-color 0.2s;
 }
 body.ch #cur { width: 11px; height: 11px; }
-body.ch #cur-r { width: 42px; height: 42px; border-color: rgba(99,102,241,0.75); }
+body.ch #cur-r { width: 42px; height: 42px; border-color: rgba(99,101,239,0.75); }
 
 /* ── SECTION LABEL ── */
 .section-label {
@@ -64,7 +64,7 @@ body.ch #cur-r { width: 42px; height: 42px; border-color: rgba(99,102,241,0.75);
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #6366F1;
+  color: #6365EF;
   margin-bottom: 14px;
 }
 .section-label::before {
@@ -72,13 +72,13 @@ body.ch #cur-r { width: 42px; height: 42px; border-color: rgba(99,102,241,0.75);
   display: inline-block;
   width: 18px;
   height: 1px;
-  background: #6366F1;
+  background: #6365EF;
   flex-shrink: 0;
 }
 
 /* ── CONSTELLATION LINES ── */
 .cl {
-  stroke: rgba(99,102,241,0.42);
+  stroke: rgba(99,101,239,0.42);
   stroke-width: 1;
   fill: none;
   stroke-linecap: round;
@@ -101,7 +101,7 @@ body.ch #cur-r { width: 42px; height: 42px; border-color: rgba(99,102,241,0.75);
 /* ── SCROLL LINE ── */
 .scroll-line {
   width: 1px; height: 38px;
-  background: linear-gradient(to bottom, rgba(99,102,241,0.45), transparent);
+  background: linear-gradient(to bottom, rgba(99,101,239,0.45), transparent);
   animation: scrollPulse 2.2s ease-in-out infinite;
 }
 @keyframes scrollPulse {
@@ -113,20 +113,20 @@ body.ch #cur-r { width: 42px; height: 42px; border-color: rgba(99,102,241,0.75);
 /* ── LOCATION DOT ── */
 .loc-dot {
   width: 6px; height: 6px;
-  background: #6366F1;
+  background: #6365EF;
   border-radius: 50%;
   animation: locPulse 2s ease-in-out infinite;
   flex-shrink: 0;
 }
 @keyframes locPulse {
-  0%,100% { box-shadow: 0 0 0 0 rgba(99,102,241,0.4); }
-  50% { box-shadow: 0 0 0 6px rgba(99,102,241,0); }
+  0%,100% { box-shadow: 0 0 0 0 rgba(99,101,239,0.4); }
+  50% { box-shadow: 0 0 0 6px rgba(99,101,239,0); }
 }
 
 /* ── PRICING NOTE DIVIDER ── */
 .pnote-divider {
   width: 1px;
-  background: rgba(99,102,241,0.11);
+  background: rgba(99,101,239,0.11);
   align-self: stretch;
   min-height: 40px;
 }

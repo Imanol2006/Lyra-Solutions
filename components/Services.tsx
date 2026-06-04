@@ -75,14 +75,14 @@ function ServiceCard({ name, desc, icon, delay }: { name: string; desc: string; 
         {/* Top line sweep */}
         <div style={{
           position: 'absolute', top: 0, left: 0, right: 0, height: 1,
-          background: '#6366F1',
+          background: '#6365EF',
           transform: hovered ? 'scaleX(1)' : 'scaleX(0)',
           transformOrigin: 'left',
           transition: 'transform 0.4s cubic-bezier(0.16,1,0.3,1)',
         }} />
 
         <div style={{
-          color: '#6366F1', opacity: hovered ? 1 : 0.75,
+          color: '#6365EF', opacity: hovered ? 1 : 0.75,
           marginBottom: 20,
           transform: hovered ? 'translateY(-2px)' : 'translateY(0)',
           transition: 'opacity 0.2s, transform 0.3s',
@@ -107,7 +107,7 @@ function ServiceCard({ name, desc, icon, delay }: { name: string; desc: string; 
           width="18" height="18" viewBox="0 0 18 18" fill="none"
           style={{
             position: 'absolute', bottom: 26, right: 26,
-            color: '#6366F1',
+            color: '#6365EF',
             opacity: hovered ? 1 : 0,
             transform: hovered ? 'translateX(0)' : 'translateX(-7px)',
             transition: 'opacity 0.2s, transform 0.2s',
@@ -155,8 +155,8 @@ export default function Services() {
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
           gap: '1px',
-          background: 'rgba(99,102,241,0.11)',
-          border: '1px solid rgba(99,102,241,0.11)',
+          background: 'rgba(99,101,239,0.11)',
+          border: '1px solid rgba(99,101,239,0.11)',
         }}>
           {services.map((s, i) => (
             <ServiceCard key={s.name} {...s} delay={i * 0.08} />

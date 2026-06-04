@@ -14,7 +14,7 @@ export default function Problem() {
       style={{
         position: 'relative', zIndex: 1,
         padding: '110px 0',
-        borderTop: '1px solid rgba(99,102,241,0.11)',
+        borderTop: '1px solid rgba(99,101,239,0.11)',
       }}
     >
       <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 clamp(22px,4vw,48px)' }}>
@@ -48,8 +48,8 @@ export default function Problem() {
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
               gap: '1px',
-              background: 'rgba(99,102,241,0.11)',
-              border: '1px solid rgba(99,102,241,0.11)',
+              background: 'rgba(99,101,239,0.11)',
+              border: '1px solid rgba(99,101,239,0.11)',
               marginTop: 56,
             }}>
               {stats.map(({ n, d }) => (
@@ -66,7 +66,7 @@ export default function Problem() {
                   <div style={{
                     fontFamily: 'var(--font-syne), sans-serif',
                     fontSize: '2.4rem', fontWeight: 800,
-                    color: '#6366F1', letterSpacing: '-0.04em',
+                    color: '#6365EF', letterSpacing: '-0.04em',
                     lineHeight: 1, marginBottom: 7,
                   }}>{n}</div>
                   <div style={{ fontSize: '0.8125rem', color: '#7A8499', lineHeight: 1.5 }}>{d}</div>

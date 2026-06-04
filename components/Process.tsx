@@ -27,7 +27,7 @@ export default function Process() {
       style={{
         position: 'relative', zIndex: 1,
         padding: '110px 0',
-        borderTop: '1px solid rgba(99,102,241,0.11)',
+        borderTop: '1px solid rgba(99,101,239,0.11)',
       }}
     >
       <div style={{ maxWidth: 1140, margin: '0 auto', padding: '0 clamp(22px,4vw,48px)' }}>
@@ -72,12 +72,12 @@ function StepCard({ n, title, desc, delay, isLast }: { n: string; title: string;
         <div style={{
           display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
           width: 54, height: 54,
-          border: `1px solid ${hovered ? '#6366F1' : 'rgba(99,102,241,0.32)'}`,
+          border: `1px solid ${hovered ? '#6365EF' : 'rgba(99,101,239,0.32)'}`,
           borderRadius: '50%',
           fontFamily: 'var(--font-syne), sans-serif',
-          fontSize: '1.05rem', fontWeight: 800, color: '#6366F1',
+          fontSize: '1.05rem', fontWeight: 800, color: '#6365EF',
           marginBottom: 28, position: 'relative', zIndex: 1,
-          background: hovered ? 'rgba(99,102,241,0.12)' : '#04040A',
+          background: hovered ? 'rgba(99,101,239,0.12)' : '#04040A',
           transform: hovered ? 'scale(1.08)' : 'scale(1)',
           transition: 'all 0.3s',
         }}>
